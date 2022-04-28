@@ -109,15 +109,11 @@ function typeWriterFinal() {
     setTimeout(typeWriterFinal, bspeed);
   }
 }
-
 /* Script for counting score */
-
 function clickCounter() {
   if (typeof Storage !== "undefined") {
     if (localStorage.clickcount) {
-      localStorage.clickcount = Number(localStorage.clickcount) + 1;
-    } else {
-      localStorage.clickcount = 1;
+      localStorage.clickcount++;
     }
     document.getElementById("result").innerText =
       "You have clicked the button " + localStorage.clickcount + " time(s).";
@@ -126,11 +122,9 @@ function clickCounter() {
       "Sorry, your browser does not support web storage...";
   }
 }
-
-// const start = document
-//   .getElementById("buttonStart")
-//   .onclick(click, localStorage.setItem("clickcount", 0));
-
+if (!localStorage.clickcount) {
+  localStorage.clickcount = 0;
+}
 
 let result = localStorage.getItem("clickcount");
 let scoretext = document.getElementById("resulttext");
@@ -141,7 +135,6 @@ scoretext.innerText = `You have a total of \n${result} correct answers out of 7!
 const flipimg = document.getElementById("Scully");
 
 // Flipping image
-
 function flipimage() {
   if (score > 3) {
     flipimg.src = "Images/Mulder5.png";
