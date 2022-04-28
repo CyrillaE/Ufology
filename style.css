@@ -1,0 +1,769 @@
+/*   --------------------------------------------   */
+/*                 All Pages                        */
+/*   --------------------------------------------   */
+
+#body{
+    background-color: #22345C;
+    color:#F3EE90 ;
+
+}
+
+.likeNavBar{
+    font-family: "RocknRoll One";
+    color:#F3EE90 ;
+    background-color: #22345C;
+    margin-left: 80px;
+    margin-top: 30px;
+    display: block;
+    height: 100px;
+
+}
+
+.ufoTitle{
+    font-size: 55px;
+    float: left;
+    text-decoration: none;
+    font-family: "RocknRoll One";
+    color:#F3EE90 ;
+    -webkit-animation: glow 5s ease-in-out infinite alternate;
+    -moz-animation: glow 5s ease-in-out infinite alternate;
+    animation: glow 5s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px rgb(37, 35, 35), 0 0 20px rgb(37, 32, 32), 0 0 30px #49c88d, 0 0 70px #45d2a1;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #b3c773, 0 0 40px #98aa3f, 0 0 50px #d8e99b, 0 0 60px #c9daa3, 0 0 70px #8e9f2a, 0 0 80px #758925;
+    }
+  }
+
+.ufoTitle:hover{
+    color:#7fdd9e ;
+    text-decoration: none;
+
+}
+
+
+/*   --------------------------------------------   */
+/*                 Home Page                        */
+/*   --------------------------------------------   */
+
+
+
+.content{
+    height: 440px;
+    width: 870px;
+    background-color: #AAB9DE;
+    border-radius: 30px;
+    margin: auto;
+    margin-top: 35px;
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    font-family: "RocknRoll One";
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    border: solid 3px #F3EE90;
+}
+
+.ufohome{
+    color: white;
+    font-family: "RocknRoll One";
+    font-size: 33px;
+    text-align: center;
+    margin-top: 17px;
+    text-decoration: none;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-decoration: none;
+
+}
+
+.noUnderline{
+    text-decoration: none;
+
+}
+
+.ufohome:hover{
+    color: #22345C;
+    text-decoration: none;
+
+}
+
+.testKnowledge{
+    color: white;
+    font-family: "RocknRoll One";
+    font-size: 30px;
+    text-align: center;
+    margin-top: 17px;
+    text-decoration: none;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+}
+
+.testKnowledge2{
+    color: white;
+    font-family: "RocknRoll One";
+    font-size: 15px;
+    text-align: center;
+    margin-top: 17px;
+    text-decoration: none;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+
+}
+
+#buttonStart{
+    margin:auto;
+    padding-top: 30px;
+    color: #22345C;
+    font-size: 35px;
+    font-family: "RocknRoll One";
+    text-decoration: none;
+ 
+}
+
+#buttonStart:hover {
+    text-decoration: none;
+    color: #F3EE90;
+  }
+
+#noDeco{
+    text-decoration: none;
+}
+
+#noDeco:hover{
+    width: 650px;
+    color: #F3EE90;
+}
+
+
+#flyingsaucerimage{
+    
+    left: 150px;
+    top: 250px;
+    z-index: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+	transition-duration: 10s;
+	transition-property: transform;
+	animation: bouge 18s ease-in-out infinite;
+	}
+
+@keyframes bouge {
+    0%, 100% {
+        transform: translate(-200px, 80px) rotate(15deg);
+    }
+    10% {
+        transform: translate(-30px,-170px) rotate(20deg);
+    }
+    20% {
+        transform: translate(0px,0px);
+    }
+    30% {
+        transform: translate(0px,-220px) rotate(25deg);
+    }
+    40% {
+        transform: translate(-130px,0px) rotate(30deg);
+    }
+    50% {
+        transform: translate(70px,-140px) rotate(50deg);
+    }
+    60% {
+        transform: translate(160px,-50px);
+    }
+    70% {
+        transform: translate(100px,-60px) rotate(28deg);
+    }
+    80% {
+        transform: translate(150px,0px) rotate(30deg);
+    }
+    90% {
+        transform: translate(0px,0px) ;
+    }
+    100% {
+        transform: translate(-200px, 80px) rotate(15deg);
+    }
+}
+
+    /* Help for the animation on Stack OverFlow
+    https://stackoverflow.com/questions/36455370/css-animation-rotate-and-translate-doesnt-work-together */
+
+
+
+/*   --------------------------------------------   */
+/*                 Question Pages                   */
+/*   --------------------------------------------   */
+
+
+.ufoTopRightImage{
+    float: right;
+    padding-right:50px;
+    float: right;
+    transition-duration: 10s;
+	transition-property: transform;
+	animation: haut 18s ease-in-out infinite;
+	}
+
+@keyframes haut {
+    0%, 100% {
+        transform: translate(0px,0px) rotate(0deg);
+    }
+    10% {
+        transform: translate(10px,40px) rotate(5deg);
+    }
+    20% {
+        transform: translate(15px,30px);
+    }
+    30% {
+        transform: translate(20px,0px);
+    }
+    40% {
+        transform: translate(20px,0px) rotate(30deg);
+    }
+    50% {
+        transform: translate(20px,0px) rotate(10deg);
+    }
+    60% {
+        transform: translate(20px,0px);
+    }
+    70% {
+        transform: translate(20px,0px) rotate(10deg);
+    }
+    80% {
+        transform: translate(40px,0px) rotate(0deg);
+    }
+    90% {
+        transform: translate(20px,0px) ;
+    }
+    100% {
+        transform: translate(20px,0px) rotate(0deg);
+    }
+}
+
+/*Specific size for Question 2 and 5*/
+
+#vague{
+    width: 200px;
+    height: 180px;
+}
+
+#imageUfo{
+    width: 180px;
+    height: 180px; 
+}
+
+
+.QuestionTitle{
+    color: white;
+    font-family: "RocknRoll One";
+    font-size: 20px;
+    margin: auto;
+    text-align: right;
+    margin-bottom: 20px;
+    margin-right: 350px;
+    border-right: .15em solid #F3EE90; 
+    animation: 
+    blink-caret .75s step-end infinite;
+}
+
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #F3EE90; }
+  }
+
+
+#stars1{ 
+    position: absolute;
+    left: 1150px;
+    top: 50px;
+    z-index: 2;
+    transition-duration: 20s;
+	transform: translate(0,100%);
+	transition-property: background, transform;
+	animation: fadeIn 3s ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes fadeIn {
+       	
+    0% {
+		opacity: 0.1;
+		}
+	20% {
+		opacity: 0.2;
+	}
+	30% {
+		opacity: 0.4;
+		}
+	40% {
+		opacity: 0.3;
+			}
+	50% {
+		opacity: 0.4;
+		}
+     60% {
+		opacity: 0.5;
+        }
+    70% {
+        opacity: 0.6;
+
+        }
+    80% {
+        opacity: 0.4;
+
+        }
+    90% {
+        opacity: 0.2;
+
+        }
+    100% {
+        opacity: 0.1;
+
+          }
+            }
+
+#stars2{ 
+    position: absolute;
+    left: 100px;
+    top: 150px;
+    z-index: 2;
+    height: 65px;
+    width: 65px;
+    transition-duration: 20s;
+	transform: translate(0,100%);
+	transition-property: background, transform;
+	animation: fadeInStarTwo 3s ease-in-out;
+    animation-iteration-count: infinite;
+
+}
+@keyframes fadeInStarTwo {
+       	
+    0% {
+		opacity: 0.8;
+		}
+	20% {
+		opacity: 0.9;
+	}
+	30% {
+		opacity: 1;
+		}
+	40% {
+		opacity: 1;
+			}
+	50% {
+		opacity: 0.9;
+		}
+     60% {
+		opacity: 0.7;
+        }
+    70% {
+        opacity: 0.4;
+
+        }
+    80% {
+        opacity: 0.2;
+
+        }
+    90% {
+        opacity: 0.5;
+
+        }
+    100% {
+        opacity: 0.7;
+
+          }
+            }
+
+
+#stars3{
+    position: absolute;
+    left: 1250px;
+    top: 390px;
+    z-index: 2;
+    transition-duration: 20s;
+	transform: translate(0,100%);
+	transition-property: background, transform;
+	animation: fadeInStarThree 3s ease-in-out;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes fadeInStarThree {
+       	
+    0% {
+		opacity: 0.4;
+		}
+	20% {
+		opacity: 0.5;
+	}
+	30% {
+		opacity: 1;
+		}
+	40% {
+		opacity: 0.7;
+			}
+	50% {
+		opacity: 0.6;
+		}
+     60% {
+		opacity: 0.3;
+        }
+    70% {
+        opacity: 0.2;
+
+        }
+    80% {
+        opacity: 0.2;
+
+        }
+    90% {
+        opacity: 0.5;
+
+        }
+    100% {
+        opacity: 0.3;
+
+          }
+            }
+
+
+
+#stars4{
+    position: absolute;
+    left: 760px;
+    top: 29px;
+    z-index: 2;
+    height: 45px;
+    width: 45px;
+    transition-duration: 20s;
+	transform: translate(0,100%);
+	transition-property: background, transform;
+	animation: fadeInStarFour 3s ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fadeInStarFour {
+       	
+    0% {
+		opacity: 0.3;
+		}
+	20% {
+		opacity: 0.5;
+	}
+	30% {
+		opacity: 1;
+		}
+	40% {
+		opacity: 0.3;
+			}
+	50% {
+		opacity: 0.2;
+		}
+     60% {
+		opacity: 0.1;
+        }
+    70% {
+        opacity: 0;
+
+        }
+    80% {
+        opacity: 0;
+
+        }
+    90% {
+        opacity: 0.5;
+
+        }
+    100% {
+        opacity: 0.3;
+
+          }
+            }
+ 
+
+
+
+.contentQuestion{
+    height: 220px;
+    width: 760px;
+    background-color: #AAB9DE;
+    margin: auto;
+    border-radius: 30px;
+}
+
+.wrapperAnswers{
+    display: flex;
+    width: 760px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.contentAnswer1{
+    height: 100px;
+    width: 300px;
+    background-color: #AAB9DE;
+    margin: auto;
+    float: right;
+    border-radius: 15px;
+    margin-left: 10px;
+}
+
+.contentAnswer2{
+    height: 100px;
+    width: 300px;
+    background-color: #AAB9DE;
+    margin: auto;
+    float: left;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+
+.noUnderline:hover{
+    text-decoration: none;
+}
+
+.ufohomeQuestion{
+    color: white;
+    font-family: "RocknRoll One";
+    font-size: 35px;
+    margin-left: 40px;
+    text-align: left;
+    padding-top: 15px;
+}
+
+.progressBar{
+    width: 770px;
+    height: 44px;
+    margin-left: 100px;
+    margin: auto;
+    margin-top: 45px;
+    padding-bottom: 80px;
+    display: block;
+}
+
+/*   --------------------------------------------   */
+/*                 Answer Page                      */
+/*   --------------------------------------------   */
+
+.boxForContent{
+    height: 500px;
+    width: 950px;
+    margin: auto;
+    margin-top: 0px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 70% 10%;
+}
+
+.imageAnswer{
+    height: 350px;
+    width: 450px;
+    margin-top: 90px;
+    float: left;
+
+}
+
+#CashL{
+    width: 380px;
+}
+
+#tictacPic{
+    width: 170px;
+    height: 80px;
+}
+#image7{
+    width: 230px;
+    height: 90px;
+}
+
+.iamgeSaucer{
+    width: 230px;
+    height: 90px;
+	transition-duration: 2s;
+	transform: translate(0,100%) scale(1,1) rotate(10deg);
+	transition-property: background, transform;
+	animation: moving 10s ease-in-out infinite;
+	}
+
+@keyframes moving {
+    0% {
+	transform: translate(100px,50px);
+}
+    10% {
+transform: translate(0px,200px);
+}
+    20% {
+    transform: translate(-20px,35px) rotate(10deg);
+    }
+    30% {
+    transform: translate(-60px,0px) rotate(20deg);
+        }
+    40% {
+    transform: translate(0px,80px);
+        }
+    50% {
+    transform: translate(10px,90px);
+    }
+    60% {
+    transform: translate(60px,0px) rotate(20deg);
+        }
+    70% {
+    transform: translate(200px,30px) scale(2,2);
+    }
+    80% {
+    transform: translate(-60px,50px);
+        }
+    90% {
+    transform: translate(-60px,40px);
+            }
+    100% {
+    transform: translate(100px,50px);
+    }
+}
+
+.textAnswer{
+    text-align:start;
+    font-family: "RocknRoll One";
+    color: white;
+    font-size: 20px;
+    float: right;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+
+}
+
+.wellDone{
+    font-family: "RocknRoll One";
+    color: #27c772;
+    font-size: 50px;
+    height: 80px;
+
+}
+
+.wrongAnswer{
+    font-family: "RocknRoll One";
+    color: #cb292f;
+    font-size: 40px;
+    height: 80px;
+
+}
+
+.bottom{
+    display: flex;
+    float: right;
+}
+
+.nextQuestion {
+    color: #F3EE90;
+    font-family: "RocknRoll One";
+    font-size: 35px;
+    width: 300px;
+    float: right;
+    padding-bottom: 30px;
+
+}
+
+.imageArrow{
+    display: block;
+    float: right;
+    margin-right: 30px;
+    overflow: auto;
+    padding-bottom: 30px;
+    transition: transform .5s;
+}
+
+.imageArrow:hover{
+    transform: scale(1.2);
+}
+
+.legende{
+    font-family: "RocknRoll One";
+    font-size: 18px;
+    height: 70px;
+    float: left;
+    font-size: 15px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+#phoenixLightImage{
+    height: 140px;
+    width: 240px;
+}
+
+
+/*   --------------------------------------------   */
+/*                 Final Page                       */
+/*   --------------------------------------------   */
+
+#resultatFinal{
+    font-size: 30px;
+    color: white;
+    border: solid 3px pink;
+    height: 30px;
+}
+
+.contentQuestionFinal{
+    height: 420px;
+    width: 420px;
+    background-color: transparent;
+    margin: auto;
+    border-radius: 30px;
+    perspective: 1000px;
+}
+
+.contentQuestionFinalInner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.contentQuestionFinal:hover .contentQuestionFinalInner {
+    transform: rotateY(180deg);
+  }
+
+  .contentQuestionFinalFront, .contentQuestionFinalBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .contentQuestionFinalFront {
+    background-color: #AAB9DE;
+    color: black;
+  }
+  
+  .contentQuestionFinalBack {
+    background-color: #1c4b7d;
+    transform: rotateY(180deg);
+  }
+
+  #Scully{
+      width: 100%;
+      height: 100%;
+  }
